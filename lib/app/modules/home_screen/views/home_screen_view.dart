@@ -10,13 +10,10 @@ class HomeScreenView extends GetView<HomeScreenController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HomeScreenView'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'HomeScreenView is working',
-          style: TextStyle(fontSize: 20),
+        toolbarHeight: 100,
+        title: const Text(
+          'New York\nTimes',
+          style: TextStyle(fontSize: 30, height: .9),
         ),
       ),
     );

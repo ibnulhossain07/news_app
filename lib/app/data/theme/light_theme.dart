@@ -12,7 +12,7 @@ ThemeData lightMode(BuildContext context) {
       iconTheme: const IconThemeData(color: Colors.white),
       elevation: 0,
       backgroundColor: ColorManager().appBarColor,
-      titleTextStyle: GoogleFonts.inter(
+      titleTextStyle: GoogleFonts.poppins(
         color: Colors.white,
         fontWeight: FontWeight.bold,
         fontSize: 20,

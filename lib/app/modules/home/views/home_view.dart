@@ -29,9 +29,9 @@ class HomeView extends GetView<HomeController> {
           },
           currentIndex: controller.currentIndex.value,
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.white,
+          selectedItemColor: ColorManager().darkBlueColor,
           elevation: 0,
-          backgroundColor: ColorManager().turquoise,
+          backgroundColor: Colors.black12,
         ),
       ),
     );
