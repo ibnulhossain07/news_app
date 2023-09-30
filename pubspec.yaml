@@ -10,11 +10,12 @@ dependencies:
   flutter_animate: ^4.2.0+1
   lottie: ^2.6.0
   flutter_screenutil: ^5.9.0
-  font_awesome_flutter: ^10.5.0
   http: ^1.1.0
   flextras: ^1.0.0
   get: 4.6.6
   loading_animation_widget: ^1.2.0+4
+  google_fonts: ^5.1.0
+  hexcolor: ^3.0.1
   flutter: 
     sdk: flutter
 
