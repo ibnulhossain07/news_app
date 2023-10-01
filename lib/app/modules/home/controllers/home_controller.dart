@@ -19,8 +19,6 @@ class HomeController extends GetxController with ExceptionHandler {
     if (connectivityResult == ConnectivityResult.wifi ||
         connectivityResult == ConnectivityResult.mobile) {
       isConnected.value = true;
-      await getBusinessNews();
-      await getTechNews();
     } else {
       isConnected.value = false;
     }
@@ -81,10 +79,16 @@ class HomeController extends GetxController with ExceptionHandler {
     }
   }
 
+  refreshPage() async {
+    getBusinessNews();
+    getTechNews();
+  }
+
   @override
   void onInit() {
     checkConnectivity();
-
+    getBusinessNews();
+    getTechNews();
     super.onInit();
   }
 }

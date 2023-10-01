@@ -27,7 +27,7 @@ class HomeView extends GetView<HomeController> {
             );
           } else {
             return RefreshIndicator(
-              onRefresh: () => controller.checkConnectivity(),
+              onRefresh: () async => await controller.refreshPage(),
               child: ListView.builder(
                 padding: const EdgeInsets.all(10),
                 itemCount: cachedArticles.length,
@@ -46,7 +46,7 @@ class HomeView extends GetView<HomeController> {
           }
         } else {
           return RefreshIndicator(
-            onRefresh: () => controller.checkConnectivity(),
+            onRefresh: () async => await controller.refreshPage(),
             child: ListView(
               padding: const EdgeInsets.all(10),
               children: [
