@@ -16,6 +16,20 @@ class HomeView extends GetView<HomeController> {
           style: TextStyle(fontSize: 30, height: .9),
         ),
       ),
+      bottomNavigationBar: controller.isConnected.value
+          ? null
+          : Container(
+              height: 20,
+              width: double.infinity,
+              color: Colors.black,
+              child: const Text(
+                "No Internet connection",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
       body: Obx(() {
         if (!controller.isConnected.value) {
           final cachedArticles = controller.getCachedArticles();
