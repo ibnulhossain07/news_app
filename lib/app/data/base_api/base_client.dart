@@ -3,8 +3,9 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:news_app/app/data/base%20api/api_exception/api_exception.dart';
-import 'package:news_app/app/data/base%20api/api_url.dart';
+
+import 'package:news_app/app/data/base_api/api_exception/api_exception.dart';
+import 'package:news_app/app/data/base_api/api_url.dart';
 
 class BaseApiClient {
   static const int timeOutDuration = 20;

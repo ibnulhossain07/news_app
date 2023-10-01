@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:get/get.dart';
-import 'package:news_app/app/data/base%20api/api_exception/api_exception.dart';
+import 'package:news_app/app/data/base_api/api_exception/api_exception.dart';
 import 'package:news_app/app/data/theme/color_manager.dart';
 
 mixin ExceptionHandler {
