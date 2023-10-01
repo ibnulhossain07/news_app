@@ -20,7 +20,7 @@ class BaseApiClient {
             headers: _setHeader(),
           )
           .timeout(const Duration(seconds: timeOutDuration));
-      log('Response status code: ${response.statusCode}');
+      // log('Response status code: ${response.statusCode}');
 
       return _processResponse(response);
     } catch (e) {
